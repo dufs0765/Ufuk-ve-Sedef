@@ -361,8 +361,8 @@ export default function Page() {
                   {scene === "bad1" ? "Kalp Bu Cevabı Kaldıramadı..." : "Yanlış Seçim Zinciri Başladı..."}
                 </h2>
                 <div className="mt-7 grid gap-4 sm:grid-cols-2">
-                  <BrushReveal image="/photos/bad-real-1.svg" title="Tripler Tavan" />
-                  <BrushReveal image="/photos/bad-real-2.svg" title="Kaşlar Çatık" delay={0.2} />
+                  <BrushReveal image="/photos/bad-real-1.png" title="Tripler Tavan" />
+                  <BrushReveal image="/photos/bad-real-2.png" title="Kaşlar Çatık" delay={0.2} />
                 </div>
                 <div className="mt-9 flex flex-col items-center gap-3 text-center">
                   <p className="text-4xl font-black tracking-[0.15em] text-red-300/85">So So Sorry Man.</p>
@@ -499,7 +499,7 @@ function FloatingEvilTaz() {
         transition={{ duration: 2.2, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
       />
       <Image
-        src="/stickers/taz-evil.svg"
+        src="/stickers/taz-evil.png"
         alt="Evil Taz dekoru"
         width={210}
         height={210}
@@ -698,21 +698,21 @@ function PolaroidStack() {
   const cards = [
     {
       title: "Öpücük Yağmuru",
-      src: "/photos/happy-real-1.svg",
+      src: "/photos/happy-real-1.png",
       imageClass: "object-[50%_76%]",
       cardClass: "w-[11rem] sm:w-[13rem]",
       frameClass: "aspect-[3/4]",
     },
     {
       title: "Ayna Pozu",
-      src: "/photos/happy-real-2.svg",
+      src: "/photos/happy-real-2.png",
       imageClass: "object-center",
       cardClass: "w-[11rem] sm:w-[13rem]",
       frameClass: "aspect-[3/4]",
     },
     {
       title: "Gül Sürprizi",
-      src: "/photos/happy-real-3.svg",
+      src: "/photos/happy-real-3.png",
       imageClass: "object-[54%_22%] scale-[1.52]",
       cardClass: "w-[13rem] sm:w-[13rem]",
       frameClass: "aspect-[4/3] sm:aspect-[3/4]",

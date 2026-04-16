@@ -107,7 +107,7 @@ export function MemoryAlbum({ unlockedMemoryIds }: MemoryAlbumProps) {
                 Kapat
               </button>
               <Image
-                src={MEMORY_ITEMS.find((item) => item.id === lightbox)?.image ?? "/photos/album/album-01.svg"}
+                src={MEMORY_ITEMS.find((item) => item.id === lightbox)?.image ?? "/photos/album/album-01.jpeg"}
                 alt="Anı tam görünüm"
                 fill
                 className="object-contain p-2 sm:p-4"
