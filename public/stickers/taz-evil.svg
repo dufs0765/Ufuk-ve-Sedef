@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220">
+  <circle cx="110" cy="110" r="100" fill="#7f1d1d"/>
+  <circle cx="110" cy="100" r="72" fill="#fca5a5"/>
+  <ellipse cx="88" cy="88" rx="14" ry="18" fill="#1f2937"/>
+  <ellipse cx="132" cy="88" rx="14" ry="18" fill="#1f2937"/>
+  <path d="M75 128 Q110 152 145 128" stroke="#1f2937" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <text x="110" y="198" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="system-ui,sans-serif" font-size="11">Taz (yer tutucu)</text>
+</svg>

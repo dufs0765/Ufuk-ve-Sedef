@@ -13,9 +13,9 @@ type CharacterCardProps = {
 
 export function CharacterCard({ title, role, image, accent, onSelect }: CharacterCardProps) {
   const avatarClassName =
-    image === "/photos/avatar-sedef-real.png"
+    image === "/photos/avatar-sedef-real.svg"
       ? "object-cover object-[56%_28%]"
-      : image === "/photos/avatar-ufuk-real.png"
+      : image === "/photos/avatar-ufuk-real.svg"
         ? "object-cover object-[52%_24%] scale-[1.38]"
         : "object-cover";
 
