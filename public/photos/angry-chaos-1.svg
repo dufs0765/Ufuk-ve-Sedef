@@ -1,0 +1,17 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="50" x2="1060" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#401523"/>
+      <stop offset="1" stop-color="#170B16"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" rx="48" fill="url(#bg)"/>
+  <path d="M0 230C170 270 210 140 380 190C550 240 550 390 740 340C930 290 1010 140 1200 240V0H0V230Z" fill="#78223C" fill-opacity="0.45"/>
+  <path d="M340 620C390 500 540 440 650 460C760 480 860 580 860 700H340V620Z" fill="#2A0E1A"/>
+  <circle cx="530" cy="560" r="18" fill="#FFDDE8"/>
+  <circle cx="670" cy="560" r="18" fill="#FFDDE8"/>
+  <path d="M520 500L480 470" stroke="#FFDDE8" stroke-width="14" stroke-linecap="round"/>
+  <path d="M680 500L720 470" stroke="#FFDDE8" stroke-width="14" stroke-linecap="round"/>
+  <path d="M520 635C560 600 640 600 680 635" stroke="#FFDDE8" stroke-width="14" stroke-linecap="round"/>
+  <text x="600" y="820" fill="#FFE5EE" font-size="52" font-family="Inter, Arial, sans-serif" text-anchor="middle">Chaos Portrait I</text>
+</svg>

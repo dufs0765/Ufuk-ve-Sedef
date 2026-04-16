@@ -1,0 +1,10 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#27180D"/>
+  <rect x="170" y="140" width="860" height="620" rx="36" fill="#33210F" stroke="#FFC874" stroke-opacity="0.4"/>
+  <path d="M510 250L560 180L610 250L680 200L720 260H480L510 250Z" fill="#FFD56E"/>
+  <circle cx="600" cy="430" r="150" fill="#6A3E16"/>
+  <circle cx="545" cy="410" r="18" fill="#FFE6BF"/>
+  <circle cx="655" cy="410" r="18" fill="#FFE6BF"/>
+  <path d="M530 515C560 465 640 465 670 515" stroke="#FFE6BF" stroke-width="16" stroke-linecap="round"/>
+  <text x="600" y="810" fill="#FFE8C4" font-size="56" font-family="Inter, Arial, sans-serif" text-anchor="middle">ROYAL RAGE</text>
+</svg>

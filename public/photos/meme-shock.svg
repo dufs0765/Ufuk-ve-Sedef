@@ -1,0 +1,15 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="120" x2="1070" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2C173E"/>
+      <stop offset="1" stop-color="#141226"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" rx="48" fill="url(#bg)"/>
+  <path d="M0 720L180 560L300 660L420 500L560 650L740 430L930 620L1050 510L1200 640V900H0V720Z" fill="#7A52B5" fill-opacity="0.35"/>
+  <circle cx="600" cy="430" r="175" fill="#41245F"/>
+  <circle cx="530" cy="400" r="24" fill="#F6E8FF"/>
+  <circle cx="670" cy="400" r="24" fill="#F6E8FF"/>
+  <ellipse cx="600" cy="520" rx="58" ry="68" fill="#F6E8FF"/>
+  <text x="600" y="815" fill="#EAD7FF" font-size="52" font-family="Inter, Arial, sans-serif" text-anchor="middle">TRUST ISSUES</text>
+</svg>

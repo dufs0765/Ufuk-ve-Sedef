@@ -1,0 +1,23 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="100" y1="50" x2="1100" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A2A4F"/>
+      <stop offset="0.5" stop-color="#1A133B"/>
+      <stop offset="1" stop-color="#0A0E1C"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(820 220) rotate(90) scale(220)">
+      <stop stop-color="#FFF9E4"/>
+      <stop offset="1" stop-color="#FFF9E4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="900" rx="48" fill="url(#bg)"/>
+  <circle cx="820" cy="220" r="180" fill="url(#moon)"/>
+  <path d="M0 670C180 640 250 740 420 730C590 720 630 590 810 620C990 650 1080 760 1200 730V900H0V670Z" fill="#0E1426"/>
+  <path d="M370 650C430 610 500 610 560 650V760H370V650Z" fill="#101A31"/>
+  <path d="M580 650C640 610 710 610 770 650V760H580V650Z" fill="#131F3A"/>
+  <circle cx="370" cy="170" r="3" fill="white"/>
+  <circle cx="415" cy="120" r="2.5" fill="white"/>
+  <circle cx="1040" cy="140" r="2.5" fill="white"/>
+  <circle cx="1000" cy="220" r="2.5" fill="white"/>
+  <text x="600" y="840" fill="#D8E9FF" font-size="52" font-family="Inter, Arial, sans-serif" text-anchor="middle">Moonlight Promise</text>
+</svg>
