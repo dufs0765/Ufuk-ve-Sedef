@@ -2,6 +2,7 @@
 
 import { useMemo } from "react";
 import { motion } from "framer-motion";
+import { assetUrl } from "@/app/lib/asset-path";
 
 type SubtleHeartRainProps = {
   count?: number;
@@ -49,13 +50,13 @@ export function SubtleHeartRain({
       {olives.map((olive) => (
         <motion.img
           key={olive.id}
-          src={
+          src={assetUrl(
             olive.kind === "orange"
               ? "/icons/menu-fruit.svg"
               : olive.kind === "olive-green"
                 ? "/icons/olive-green.svg"
-                : "/icons/olive-black.svg"
-          }
+                : "/icons/olive-black.svg",
+          )}
           alt="meyve"
           className="absolute top-[-8%] select-none opacity-60"
           style={{

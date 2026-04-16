@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { assetUrl } from "@/app/lib/asset-path";
 import { MEMORY_ITEMS } from "@/app/lib/game-data";
 
 type MemoryAlbumProps = {
@@ -60,7 +61,7 @@ export function MemoryAlbum({ unlockedMemoryIds }: MemoryAlbumProps) {
             >
               <div className="bg-white p-2">
                 <Image
-                  src={memory.image}
+                  src={assetUrl(memory.image)}
                   alt={memory.title}
                   width={1200}
                   height={1600}
@@ -107,7 +108,7 @@ export function MemoryAlbum({ unlockedMemoryIds }: MemoryAlbumProps) {
                 Kapat
               </button>
               <Image
-                src={MEMORY_ITEMS.find((item) => item.id === lightbox)?.image ?? "/photos/album/album-01.jpeg"}
+                src={assetUrl(MEMORY_ITEMS.find((item) => item.id === lightbox)?.image ?? "/photos/album/album-01.jpeg")}
                 alt="Anı tam görünüm"
                 fill
                 className="object-contain p-2 sm:p-4"

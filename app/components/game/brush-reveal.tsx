@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { assetUrl } from "@/app/lib/asset-path";
 import { motion } from "framer-motion";
 
 type BrushRevealProps = {
@@ -23,7 +24,7 @@ export function BrushReveal({ image, title, delay = 0 }: BrushRevealProps) {
         transition={{ duration: 0.85, ease: [0.2, 0.8, 0.2, 1], delay }}
         className="absolute inset-0"
       >
-        <Image src={image} alt={title} fill className="object-cover" sizes="(max-width: 768px) 90vw, 40vw" />
+        <Image src={assetUrl(image)} alt={title} fill className="object-cover" sizes="(max-width: 768px) 90vw, 40vw" />
       </motion.div>
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
       <p className="absolute bottom-4 left-4 text-sm font-medium text-white/90">{title}</p>

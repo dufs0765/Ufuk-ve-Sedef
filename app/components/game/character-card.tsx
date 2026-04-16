@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { assetUrl } from "@/app/lib/asset-path";
 
 type CharacterCardProps = {
   title: string;
@@ -32,7 +33,7 @@ export function CharacterCard({ title, role, image, accent, onSelect }: Characte
       <div className={`pointer-events-none absolute inset-0 bg-gradient-to-br ${accent} opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-100`} />
       <div className="relative z-10 flex items-center gap-4">
         <div className="relative size-20 overflow-hidden rounded-2xl border border-white/20 bg-white/10">
-          <Image src={image} alt={title} fill className={avatarClassName} sizes="80px" />
+          <Image src={assetUrl(image)} alt={title} fill className={avatarClassName} sizes="80px" />
         </div>
         <div>
           <h3 className="text-xl font-semibold tracking-wide text-white">{title}</h3>

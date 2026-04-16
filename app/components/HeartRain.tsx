@@ -2,6 +2,7 @@
 
 import { useMemo } from "react";
 import { motion } from "framer-motion";
+import { assetUrl } from "@/app/lib/asset-path";
 
 interface Olive {
   id: number;
@@ -57,13 +58,13 @@ export default function FruitRain({ count = 35, mode = "mixed", oliveTone = "mix
       {olives.map((olive) => (
         <motion.img
           key={olive.id}
-          src={
+          src={assetUrl(
             olive.kind === "orange"
               ? "/icons/menu-fruit.svg"
               : olive.kind === "olive-green"
                 ? "/icons/olive-green.svg"
-                : "/icons/olive-black.svg"
-          }
+                : "/icons/olive-black.svg",
+          )}
           alt="meyve"
           className="absolute top-[-40px] select-none"
           style={{

@@ -12,6 +12,7 @@ import { MemoryAlbum } from "@/app/components/game/memory-album";
 import FruitRain from "@/app/components/HeartRain";
 import { SubtleHeartRain } from "@/app/components/game/subtle-heart-rain";
 import { TrueLoveConfetti } from "@/app/components/game/true-love-confetti";
+import { assetUrl } from "@/app/lib/asset-path";
 import { CHARACTER_OPTIONS } from "@/app/lib/game-data";
 import { useLoveGameStore, type Scene } from "@/app/store/use-love-game-store";
 
@@ -432,7 +433,7 @@ export default function Page() {
                   Alt başlığa 7 kez dokunarak gizli sahneyi açtın.
                 </p>
                 <div className="mx-auto mt-7 max-w-xl overflow-hidden rounded-3xl border border-white/20">
-                  <Image src="/photos/secret-eclipse.svg" alt="Gizli son görseli" width={900} height={500} className="h-auto w-full" />
+                  <Image src={assetUrl("/photos/secret-eclipse.svg")} alt="Gizli son görseli" width={900} height={500} className="h-auto w-full" />
                 </div>
                 <div className="mt-7 flex justify-center gap-3">
                   <PremiumButton title="Albüm Modu" onClick={() => goTo("album")} compact />
@@ -499,7 +500,7 @@ function FloatingEvilTaz() {
         transition={{ duration: 2.2, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
       />
       <Image
-        src="/stickers/taz-evil.png"
+        src={assetUrl("/stickers/taz-evil.png")}
         alt="Evil Taz dekoru"
         width={210}
         height={210}
@@ -736,7 +737,7 @@ function PolaroidStack() {
         >
           <div className={`relative overflow-hidden rounded-xl ${card.frameClass}`}>
             <Image
-              src={card.src}
+              src={assetUrl(card.src)}
               alt={card.title}
               fill
               sizes="(max-width: 640px) 44vw, 240px"

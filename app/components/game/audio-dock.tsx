@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef } from "react";
+import { assetUrl } from "@/app/lib/asset-path";
 
 type SoundType = "hover" | "click" | "ambient" | "romantic" | "meme";
 
@@ -48,7 +49,7 @@ export function AudioDock({ mute, volume, onReady }: AudioDockProps) {
     if (mute) return;
     if (!ambientTrackRef.current) {
       if (!sharedAmbientAudio) {
-        sharedAmbientAudio = new Audio("/sounds/kenan-bas-harfim-ben.mp3");
+        sharedAmbientAudio = new Audio(assetUrl("/sounds/kenan-bas-harfim-ben.mp3"));
         sharedAmbientAudio.loop = true;
         sharedAmbientAudio.preload = "auto";
       }
@@ -84,7 +85,7 @@ export function AudioDock({ mute, volume, onReady }: AudioDockProps) {
       if (sound === "meme") {
         if (mute) return;
         if (!clashRef.current) {
-          clashRef.current = new Audio("/sounds/clash-kral-sinirli.mp3");
+          clashRef.current = new Audio(assetUrl("/sounds/clash-kral-sinirli.mp3"));
         }
         clashRef.current.volume = Math.max(0, Math.min(1, volume));
         clashRef.current.currentTime = 0;
